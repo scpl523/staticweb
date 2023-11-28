@@ -1,3 +1,4 @@
+import { keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css']
 })
+
+
 export class CountdownComponent implements OnInit {
 
   constructor() { }
