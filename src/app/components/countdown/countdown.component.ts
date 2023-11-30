@@ -13,7 +13,7 @@ export class CountdownComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const launchDay = new Date('12/08/2023 12:00 AM');
+    const launchDay = new Date('12/09/2023 12:00 AM');
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
@@ -34,10 +34,10 @@ export class CountdownComponent implements OnInit {
       var minutes = Math.floor((distance % _hour) / _minute);
       var seconds = Math.floor((distance % _minute) / _second);
 
-      document.getElementById('countdown')!.innerHTML = days + 'days ';
-      document.getElementById('countdown')!.innerHTML += hours + 'hrs ';
-      document.getElementById('countdown')!.innerHTML += minutes + 'mins ';
-      document.getElementById('countdown')!.innerHTML += seconds + 'secs';
+      document.getElementById('countdown')!.innerHTML = days + ' DAYS&nbsp;&nbsp;';
+      document.getElementById('countdown')!.innerHTML += hours + ' HRS&nbsp;&nbsp;';
+      document.getElementById('countdown')!.innerHTML += minutes + ' MINS&nbsp;&nbsp;';
+      document.getElementById('countdown')!.innerHTML += seconds + ' SEC';
   }
 
   timer = setInterval(showRemaining, 1000);
