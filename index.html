@@ -21,14 +21,14 @@
                 return;
             }
             var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
+            var hours = Math.floor((distance) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
 
-            document.getElementById('countdown').innerHTML = days + ' DAYS&nbsp;&nbsp;';
-            document.getElementById('countdown').innerHTML += hours + ' HRS&nbsp;&nbsp;';
-            document.getElementById('countdown').innerHTML += minutes + ' MINS&nbsp;&nbsp;';
-            document.getElementById('countdown').innerHTML += seconds + ' SEC';
+           */ document.getElementById('countdown').innerHTML = days + ' :&nbsp;&nbsp;'; */
+            document.getElementById('countdown').innerHTML += hours + ' :&nbsp;&nbsp;';
+            document.getElementById('countdown').innerHTML += minutes + ':&nbsp;&nbsp;';
+            document.getElementById('countdown').innerHTML += seconds;
             }
 
             timer = setInterval(showRemaining, 1000);
@@ -58,9 +58,10 @@
                 font-family: Impact;
             }
 
-            .comingsoon{
-                text-align: center;
-            }
+ 
+       /*     .comingsoon{ */
+        /*        text-align: center; */
+       /*     }  */
 
             @keyframes pulse{
                 from{
@@ -82,7 +83,7 @@
             <img src="IMG_0205.jpeg" alt="Logo" id="scumlogo"> 
         </div>
             <div class="comingsoon">
-            <h1>COMING SOON</h1>
+        /*    <h1>COMING SOON</h1>  */
             <h2 id="countdown"></h2>
         </div>
     </body>
